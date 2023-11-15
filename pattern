@@ -1,0 +1,16 @@
+#include <stdio.h> //imports variables and functions to perform input output operations
+#include <stdlib.h> //includes functions involving memory allocation
+
+void main() //starting point of program
+{
+    int i;int a; //integer type variable is being created to store integer type value
+    for(i=0;i<6;i++) //loop that iterates five times for the desired pattern
+    {
+        for(a=0;a<i;a++) //loop to repeat character in the same line
+        {
+        printf("*"); //print command prints the required character
+        }
+        printf("\n"); //cursor goes to new line
+
+    }
+}
