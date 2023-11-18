@@ -1,0 +1,18 @@
+#include <stdio.h> //imports variables and functions to perform input output operations
+int main() //starting point of program
+{
+    int i,a,r; //integer type variables  are being created to store integer type values
+printf("Enter the number of rows for the pattern"); //print command asking for number of rows
+scanf("%d",&r); //function that holds input values
+
+    for(i=0;i<r;i++) //loop that iterates for the number of rows user has decided 
+    {
+        for(a=0;a<=i;a++) //loop to repeat character in the same line
+        {
+        printf("*"); //print command prints the required character
+        }
+        printf("\n"); //cursor goes to new line
+ 
+}
+return 0;
+}
