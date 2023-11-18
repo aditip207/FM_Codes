@@ -1,0 +1,15 @@
+#include<stdio.h> //includes input output functions in the program
+int main() //starting point of the program 
+{
+    int a,b,c; //initializing of variables
+    int *ptr1 , *ptr2; // pointer variables with the name ptr1 and ptr2 
+    printf("enter integer values for two variables a and b"); //command to enter input values
+    scanf("%d %d",&a,&b); //command that stores the users input
+    ptr1=&a; //pointer1 that stores address of variable a 
+    ptr2=&b; //pointer2 that stores address of variable b 
+    c=*ptr1; //third variable for swapping 
+    *ptr1=*ptr2;
+    *ptr2=c;
+printf("after swapping a=%d and b=%d",a,b);
+return 0;  
+}
