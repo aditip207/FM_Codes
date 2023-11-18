@@ -1,0 +1,22 @@
+#include <stdio.h>  //imports variables and functions to perform input output operations
+int main() //a function 
+{
+    char str[100];  // a variable that holds string type values 
+    int i, vowels = 0; //variable initializing 
+    printf("Enter the string: "); //print command 
+    scanf("%[^\n]s",&str);//%[^\n]It is an edit conversion code:can be used to read a line containing characters like variables and even whitespaces.
+    
+    for(i = 0; str[i]; i++)  //loop to check vowels present in the string 
+    {
+      
+        if(str[i]=='a'|| str[i]=='e'||str[i]=='i'||
+           str[i]=='o'|| str[i]=='u'||str[i]=='A'||
+           str[i]=='E'||str[i]=='I'||str[i]=='O' ||str[i]=='U')
+        {
+            vowels++; //stores value of number of vowels (keeps incrementing as the loop finds more vowels)
+        }
+    }
+ 	
+    printf("Total number of vowels: = %d\n",vowels); //prints number of vowels in the string
+    return 0; //ends main function
+}
