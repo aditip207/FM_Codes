@@ -1,0 +1,12 @@
+#include <stdio.h> //imports variables and functions to perform input output
+#include <stdlib.h>//includes functions involving memory allocation
+
+int main() //starting point of program
+{
+int a;char b[30];double c; char d; //variables being created to store data
+printf("enter a string,integer,double and character input: \n"); //print command to take inputs
+scanf("%s %d %lf %c",&b,&a,&c,&d); //stores input in variables
+printf("The string output:%s\n",b); //print command that displays given input
+printf("The integer output:%d\n",a);
+printf("The double output:%lf\n",c);
+printf("The character output:%c\n",d); }
